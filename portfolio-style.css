@@ -28,19 +28,20 @@ nav {
   margin-top: 25px;
 }
 
-nav ul li {
+/*nav ul li {
   float: left;
   width: 50%;
-}
+}*/
 
-nav ul li:first-child {
+/*nav ul li:first-child {
   text-align: right;
   padding-right: 20px;
-}
+}*/
 
 nav ul li:last-child {
-  text-align: left;
-  padding-left: 20px;
+  /*text-align: left;
+  padding-left: 20px;*/
+  text-align: center;
 }
 
 nav a {
@@ -215,11 +216,17 @@ footer a:not(:last-child){
   color: #343a40;
 }
 
-.portfolio-section-links img {
+.portfolio-section-links img, .portfolio-section-links .view-more-blank-div {
   width: 100px;
   height: 60px;
   border: 2px solid #fff;
   box-shadow: 0 0 10px rgba(33, 37, 41, 0.5);
+}
+
+.portfolio-section-links .view-more-blank-div{
+	border: none;
+	box-shadow: none;
+	height: 0px;
 }
 
 .portfolio-section-links .portfolio-link-text {
@@ -239,6 +246,10 @@ footer a:not(:last-child){
   padding: 21px 0 0 20px;
   color: #dee2e6;
   font-size: 1.25rem;
+}
+
+.portfolio-section-links li:last-child .view-more-chevron-right {
+  padding: 0px;
 }
 
 .portfolio-resume .fa {
@@ -327,7 +338,7 @@ footer a:not(:last-child){
     text-decoration: none;
   }
 
-  .portfolio-section-links h3::after{
+  .portfolio-section-links h3::after, .portfolio-section-links .view-more-text::after{
     padding: 0px 0 0 10px;
     color: #dee2e6;
     font-size: 1.25rem;
@@ -338,6 +349,7 @@ footer a:not(:last-child){
     content: "\f054";
 
   }
+ 
   .portfolio-section-links a:hover h3 {
     text-decoration: none;
   }
